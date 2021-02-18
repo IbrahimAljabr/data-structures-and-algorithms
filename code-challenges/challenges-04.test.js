@@ -53,15 +53,11 @@ For example:
 
 const isNum = (input) => {
   // Solution code here...
-  let regex = /[0-9]/g;
+  let regex = /[0-9]/;
  
-    if (regex.test(input)) {
-      return true;
-    }
-    else {
-      
-      return false;
-    }
+  return regex.test(input);
+   
+    
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -74,15 +70,12 @@ use a regular expression pattern to return true if the input contains the word '
 
 const containsWorld = (input) => {
   // Solution code here...
-  let regex = /world/g;
+  let regex = /world/;
  
-    if (regex.test(input)) {
-      return true;
-    }
-    else {
+   return regex.test(input);
       
-      return false;
-    }
+    
+    
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -97,12 +90,12 @@ Return an array containing all the matches.
 const isCapitalized = (str) => {
   // Solution code here...
   let newArr=[];
-  let regex = /[A-Z]/g;
+  let regex = /[A-Z]\w*/g;
  
-    if (regex.test(str)) {
-      newArr.push(str);
-    }
-    return newArr;
+   return str.match(regex) || [];
+      
+    
+    
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -115,7 +108,7 @@ to return a new array containing any cities that begin with the letters A throug
 const citiesAtoJ = (arr) => {
   // Solution code here...
   let newArr=[]
-  let regex = /[A-J]/g;
+  let regex = /^[A-J]\w/;
   arr.forEach(element => {
     if (regex.test(element)) {
         newArr.push(element);
