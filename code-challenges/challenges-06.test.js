@@ -6,9 +6,13 @@ CHALLENGE 1 - Review
 
 Use the characters data below for all of the challenges except challenge 2 and 3.
 
-Write a function named sortByChildren that sorts the characters below by the number of children in each house (fewest to most). If a house has the same number of children, sort alphabetically by house name.
+Write a function named sortByChildren that sorts the characters below by the number of 
+children in each house (fewest to most). If a house has the same number of children, 
+sort alphabetically by house name.
 
 ------------------------------------------------------------------------------------------------ */
+
+
 let characters = [
   {
     name: 'Eddard',
@@ -56,12 +60,35 @@ let characters = [
 
 const sortByChildren = (charArray) => {
   // Solution code here...
-};
+
+  charArray.sort((b,a)=>{
+
+    if(a.children.length<b.children.length)
+      return 1;
+      else if(a.children.length>b.children.length)
+      return -1;
+      else{
+        charArray.sort ((a,b) => {
+          if ( a.name < b.name ){
+              return -1;
+            }
+            if ( a.title > b.title ){
+              return 1;
+            }
+            return 0;
+          
+      });
+      }
+      });
+
+      return charArray;
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named getCourseKeys that takes in the courseInfo object and returns an array containing the keys for the courseInfo object.
+Write a function named getCourseKeys that takes in the courseInfo object and returns an array containing 
+the keys for the courseInfo object.
 
 For example: (['name', 'duration', 'topics', 'finalExam']).
 ------------------------------------------------------------------------------------------------ */
@@ -72,18 +99,34 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 
 const getCourseKeys = (obj) => {
   // Solution code here...
+  let newArr=[];
+  for(let item in obj){
+  newArr.push(item);
+  }
+  return newArr;
+  // let newArr=[];
+  // seArr=Object.keys(obj);
+  // return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named checkValues that takes in an object and a value and returns true if the value is in the object.
+Write a function named checkValues that takes in an object and a value and returns true if the 
+value is in the object.
 
 
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
   // Solution code here...
+
+let newO=[];
+Object.values(obj).forEach(value=>{
+  newO.push(value);
+});
+let is=newO.includes(value);
+  return is;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -107,6 +150,16 @@ HR has asked you to change the data to make it easier to print so that it looks 
 
 const updateNumbers = (obj) => {
   // Solution code here...
+  let newO=[];
+  let old=[];
+  Object.entries(obj).forEach(entry=>{
+    newO.push(entry);
+  });
+
+  for (let index = 0; index < 3; index++) {
+  old.push(newO[index].join(": "));
+  }
+  return old;
 };
 
 
@@ -114,19 +167,25 @@ const updateNumbers = (obj) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named getHouses that returns a new array containing the names of all of the houses in the data set.
+Write a function named getHouses that returns a new array containing the names of all of the 
+houses in the data set.
 ------------------------------------------------------------------------------------------------ */
 
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
+  for (let index = 0; index < arr.length; index++) {
+  
+    houses.push(arr[index].house);
+  }
   return houses;
 };
 
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named hasChildrenValues that uses Object.values to determine if any given character in the data set has children.
+Write a function named hasChildrenValues that uses Object.values to determine if any given character 
+in the data set has children.
 
 This function should take in an array of data and a character name and return a Boolean.
 
@@ -137,6 +196,16 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
+  let newO=[];
+  let is=0;
+  Object.values(arr).forEach(value=>{
+    newO.push(value.name);
+    is=newO.indexOf(character);
+    });
+    if((is>0)&&(arr[is].children !== 0)){
+      return true;
+    }
+  else return false;
 
 };
 
@@ -254,6 +323,7 @@ describe('Testing challenge 5', () => {
     expect(getHouses(characters).length).toStrictEqual(7);
   });
 });
+
 
 
 describe('Testing challenge 6', () => {
