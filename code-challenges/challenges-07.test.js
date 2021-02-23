@@ -8,32 +8,54 @@ Write a function named replaceZeros that, given a string, uses Regex to replace 
 
 const replaceZeros = (string) => {
   // Solution code here...
+  let newArr=string.split('');
+  let secArr=newArr.map((val)=>{
+   if(val=='0')
+      return 'zero';
+      else
+      return val
+  });
+  let thrdArr=secArr.join('');
+  return thrdArr;
+
 }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named addOne that, given an array of numbers, uses map to return a new array with each value simply incremented by 1. 
+Write a function named addOne that, given an array of numbers, uses map to return a new array with each 
+value simply incremented by 1. 
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
   // Solution code here...
+  let newArr=arr.map((val)=>{
+    return val+1
+   });
+   return newArr;
 }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named addQuestion that, given an array of strings, uses map to return a new array containing each string followed by a question mark character.
+Write a function named addQuestion that, given an array of strings, uses map to return a new array 
+containing each string followed by a question mark character.
 ------------------------------------------------------------------------------------------------ */
 
 const addQuestion = (arr) => {
   // Solution code here...
+  let newArr=arr.map((val)=>{
+    return val+'?'
+  });
+  return newArr;
 }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named forLoopTwoToThe that, given an array of integers as input, iterates over the array and returns a new array. The returned array should contain the result of raising 2 to the power of the original input element.
+Write a function named forLoopTwoToThe that, given an array of integers as input, iterates over the 
+array and returns a new array. The returned array should contain the result of raising 2 to the power of 
+the original input element.
 
 You may choose to complete this challenge using a for loop, for...in syntax, or for...of syntax.
 
@@ -42,26 +64,42 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 
 const forLoopTwoToThe = (arr) => {
   // Solution code here...
+  let newArr=arr.map((val)=>{
+    return Math.pow(2, val);
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named forEachTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 1, but uses forEach instead of a for loop.
+Write a function named forEachTwoToThe that produces the same output as your forLoopTwoToThe 
+function from challenge 1, but uses forEach instead of a for loop.
 ------------------------------------------------------------------------------------------------ */
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+  let newArr=[];
+  arr.forEach((val)=>{
+    newArr.push(Math.pow(2, val));
+  });
+    return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named mapTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 1 and your forEachTwoToThe function from challenge 2, but uses map instead of a for loop or forEach.
+Write a function named mapTwoToThe that produces the same output as your forLoopTwoToThe 
+function from challenge 1 and your forEachTwoToThe function from challenge 2, but uses map 
+instead of a for loop or forEach.
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
   // Solution code here...
+  let newArr=arr.map((val)=>{
+    return Math.pow(2, val);
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
