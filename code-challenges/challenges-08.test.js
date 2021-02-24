@@ -3,54 +3,79 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
-Write a function named returnTen, takes in a string and uses split and splice to return the last 10 characters from that string as elements of an array.
+Write a function named returnTen, takes in a string and uses split and splice to return the 
+last 10 characters from that string as elements of an array.
 
 ------------------------------------------------------------------------------------------------ */
 
 function returnTen(str){
   // Solution code here...
+  let newArr =str.split('');
+  for (let index = 0; index < newArr.length; index++) {
+
+  if(newArr.length >10){
+      newArr.splice(0,1);
+  }else return newArr;
+}
+  
 }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named typeNum that, given an array as input, uses filter to return an array containing only the numbers.
+Write a function named typeNum that, given an array as input, uses filter to return an array containing 
+only the numbers.
 
 For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const typeNum = (arr) => {
   // Solution code here...
+  let newArr=arr.filter(function(val){
+    return (typeof val === "number");
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named containsAnd that, given an array of strings as input, uses filter to return an array containing only strings that contain 'and' within the string.
+Write a function named containsAnd that, given an array of strings as input, uses filter to 
+return an array containing only strings that contain 'and' within the string.
 
 For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
 const containsAnd = (arr) => {
   // Solution code here...
+  let newArr=arr.filter(function(val){
+    return (val.includes('and') === true);
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named oddValues that, given an array of integers as input, uses filter to return an array containing only the odd integers.
+Write a function named oddValues that, given an array of integers as input, uses filter to return an 
+array containing only the odd integers.
 
 For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const oddValues = (arr) => {
   // Solution code here...
+  let newArr=arr.filter(function(val,idx){
+    return (val % 2);
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named filterStringsWithVowels that, given an array of strings as input, uses filter to return an array with only words that contain vowels.
+Write a function named filterStringsWithVowels that, given an array of strings as input, 
+uses filter to return an array with only words that contain vowels.
 
 The callback function to filter should include or utilize a regular expression pattern.
 
@@ -60,19 +85,30 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 const filterStringsWithVowels = (arr) => {
   // Solution code here...
+  let regex = /[aeiuo]/;
+
+  let newArr=arr.filter(function(val){
+    return (regex.test(val) === true);
+  });
+  return newArr;
 };
 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named notInFirstArray that, given two arrays as input, uses filter to return an array of all the elements in the second array that are not included in the first array.
+Write a function named notInFirstArray that, given two arrays as input, uses filter to return an array of 
+all the elements in the second array that are not included in the first array.
 
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+  let newArr=arr.filter(function(val){
+    return !forbiddenValues.includes(val);
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
