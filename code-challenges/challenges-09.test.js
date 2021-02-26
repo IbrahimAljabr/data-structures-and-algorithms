@@ -3,7 +3,8 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
-Write a function named transformToLis that, given an object, returns an array of the key value pairs as html list items.
+Write a function named transformToLis that, given an object, returns an array of the key 
+value pairs as html list items.
 
 For example: 
 {
@@ -20,23 +21,40 @@ Becomes:
 
 function transformToLis(obj){
   // Solution code here...
+  let newArr =[];
+  for (let p in obj){
+
+  newArr.push(`<li>${p}: ${obj[p]}</li>`);
+  
+  }
+
+  return newArr
 }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named addValues that, given an array of numbers as input, uses reduce to add the values in the array.
+Write a function named addValues that, given an array of numbers as input, uses 
+reduce to add the values in the array.
 
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr) => {
   // Solution code here...
+  let sum=0;
+
+  arr.reduce((acc,val)=>{
+  sum = sum +val;
+},0);
+
+  return sum;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named addPurchases that, given an array of objects as input, uses reduce to find the total amount purchased. Each object contains the keys `item` and `purchasePrice` like the example.
+Write a function named addPurchases that, given an array of objects as input, uses reduce to find the total 
+amount purchased. Each object contains the keys `item` and `purchasePrice` like the example.
 
 {
   item: 'switch'
@@ -47,24 +65,40 @@ Write a function named addPurchases that, given an array of objects as input, us
 
 const addPurchases = (arr) => {
   // Solution code here...
+  let sum=0;
+
+  arr.reduce((acc,val,idx)=>{
+
+  sum = sum +arr[idx].purchasePrice;
+},0);
+  return sum;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named countNumberOfElements that, given an array as input, uses reduce to count the number of elements in the array.
+Write a function named countNumberOfElements that, given an array as input, uses reduce to count the 
+number of elements in the array.
 
 Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
   // Solution code here...
+  let num=arr.reduce((acc,val,idx)=>{
+
+    acc++;
+    return acc;
+  
+  },0);
+    return num;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named returnNames that, given the Star Wars data, below, uses reduce to return an array containing the names of the characters.
+Write a function named returnNames that, given the Star Wars data, below, uses reduce to 
+return an array containing the names of the characters.
 ------------------------------------------------------------------------------------------------ */
 
 let starWarsData = [{
@@ -119,6 +153,16 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
+
+  let newArr=[];
+
+  arr.reduce((acc,val,idx)=>{
+  
+  newArr.push(arr[idx].name);
+  
+  },0);
+
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -131,6 +175,14 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
+  let newArr=str.split('');
+  let rename=newArr.reduce((acc,val,idx)=>{
+
+              return val+acc;
+}, '');
+   
+  return rename;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
