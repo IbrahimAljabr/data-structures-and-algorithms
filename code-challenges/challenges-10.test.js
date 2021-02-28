@@ -100,27 +100,27 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
 
-      
-      let sec = input.forEach((val,idx)=>{
-          let count=idx;
-          val.forEach((val2,idx2)=>{
+  input.map(val =>{
 
-          count++;
-                if (((val2 % 5) !== 0) || (typeof val2 !== 'number')){
+    val.map((val2,idx) =>{
+      if((val2 % 5 !== 0)){
+        val.splice(idx,1,0);
+      }
+    });
+  
+    for (let index = 0; index < val.length; index++) {
+    
+          if(val[index] === 0){
+            val.splice(index,1)
+            index--;
+          }
+          else{
+            val.splice(index,1,Math.pow(2, val[index]))
+          }
+      }
+  });
 
-                val.splice(count,1,0);
-                  count--;
-            } else{
-              
-            val.splice(idx2,1,Math.pow(2, val2));
-
-            }
-          });
-              if(val[idx] ===0){ 
-            }
-      });
-
-      return sec;
+  return input;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -269,13 +269,11 @@ describe('Testing challenge 4', () => {
   test('It should return an empty array if none of the numbers are divisible by five', () => {
     expect(divisibleByFiveTwoToThePower([[1, 2, 3], [5, 10, 15]])).toStrictEqual([[], [32, 1024, 32768]]);
   });
-  
 
   test('It should return an empty array if the values are not numbers', () => {
     expect(divisibleByFiveTwoToThePower([['one', 'two', 'five'], ['5', '10', '15'], [5]])).toStrictEqual([[], [], [32]]);
   });
 });
-
 
 describe('Testing challenge 5', () => {
   test('It should return only characters that are male or female', () => {
