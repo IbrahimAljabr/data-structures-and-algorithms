@@ -103,7 +103,7 @@ const divisibleByFiveTwoToThePower = (input) => {
   input.map(val =>{
 
     val.map((val2,idx) =>{
-      if((val2 % 5 !== 0)){
+      if((val2 % 5 !== 0) && (val2 )){
         val.splice(idx,1,0);
       }
     });

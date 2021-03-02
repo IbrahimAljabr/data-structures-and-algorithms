@@ -10,12 +10,20 @@ E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
   // Solution code here...
+  let big=0;
+  arr.reduce((acc,val)=>{
+  if(val>big){
+  big =val;
+  }
+  },0);
+    return big;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named findMax that takes in a matrix of positive numbers and returns the number with the highest value.
+Write a function named findMax that takes in a matrix of positive numbers and returns the 
+number with the highest value.
 
 For example: 
 [
@@ -28,6 +36,16 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
+  let big=0;
+
+  matrix.map((val)=>{
+    val.map((val2)=>{
+      if(val2>big){
+        big=val2;
+      }
+    })
+  })
+  return big;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,15 +64,28 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...
+    let big=0;
+
+    matrix.map((val)=>{
+    val.map((val2)=>{
+      
+        big=big+val2;
+    })
+  })
+  return big;
 };
 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-You friend Pat has a chain of stores around the greater Seattle area. He specializes in selling salmon cookies. Pat has data for the hourly sales of cookies per hour for each store. He wants to create an array of the total number of cookies sold per hour for all of his stores combined.
+You friend Pat has a chain of stores around the greater Seattle area. He specializes in selling 
+salmon cookies. Pat has data for the hourly sales of cookies per hour for each store. He wants to 
+create an array of the total number of cookies sold per hour for all of his stores combined.
 
-Write a function named grandTotal that adds up the cookies sales for each hour of operation for all of the stores combined. For example, the first element in the hourlySales array should be the sum of the cookies sold in the 9:00 a.m. hour at all five stores combined.
+Write a function named grandTotal that adds up the cookies sales for each hour of operation for 
+all of the stores combined. For example, the first element in the hourlySales array should be the 
+sum of the cookies sold in the 9:00 a.m. hour at all five stores combined.
 
 For this example, the total at 9:00 a.m. is 17 + 26 + 7 + 5 + 33, or 88 total cookies.
 
@@ -73,27 +104,47 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
+  let big=new Array(firstPike.length).fill(0);
 
+  stores.map((val)=>{
+      val.map((val2,idx)=>{
+
+          big[idx]+=val2;
+      });
+    });
+    return big;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Pat has decided that he would also like to organize his data as objects containing the number of cookies sold per hour and the time.
+Pat has decided that he would also like to organize his data as objects containing the 
+number of cookies sold per hour and the time.
 
 Here is sample data for the 9:00 sales: { sales: '88 cookies', time: '9 a.m.' }.
 
-Write a function named salesData that uses forEach to iterate over the hourlySales array and create an object for each hour. Return an array of the formatted data.
+Write a function named salesData that uses forEach to iterate over the hourlySales 
+array and create an object for each hour. Return an array of the formatted data.
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
   // Solution code here...
+
+    var arr = [];
+    for (var i = 0; i < data.length; i++) {
+        arr.push({
+          'sales': data[i]+' cookies',
+          'time': hours[i],
+        });
+    }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named howManyTreats that will return the quantity of treats you need to pick up from the pet store today from this array.
+Write a function named howManyTreats that will return the quantity of treats you need to 
+pick up from the pet store today from this array.
 ------------------------------------------------------------------------------------------------ */
 
 const errands = [
@@ -113,6 +164,17 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
+
+  let x;
+  arr.map((val,idx)=>{
+    val.items.map((val2,idx2)=>{
+      if(val2.name == 'Treats')
+      {
+        x=val2.quantity
+      }
+    }); 
+  });
+  return x;
 };
 
 /* ------------------------------------------------------------------------------------------------
