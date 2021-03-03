@@ -3,41 +3,69 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
-Write a function named longestString that takes in an array of strings and returns the index position of the longest string. 
+Write a function named longestString that takes in an array of strings and returns the index position 
+of the longest string. 
 ------------------------------------------------------------------------------------------------ */
 
 const longestString = (arr) => {
-// Solution code here...
+  // Solution code here...
+  let x = 0;
+  let ne = -1;
+  arr.map((val, idx) => {
+
+    val.split('').length;
+
+    if (x < val.split('').length) {
+      x = val.split('').length;
+      ne = idx;
+    }
+  });
+  return ne;
 };
-  
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named firstLetters that takes in an array of strings and returns an array containing only the first letter of each string.
+Write a function named firstLetters that takes in an array of strings and returns an array 
+containing only the first letter of each string.
 
 For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 'w', 'w', ':']
 ------------------------------------------------------------------------------------------------ */
 
 const firstLetters = (arr) => {
   // Solution code here...
+    let x = arr.map((val, idx) => {
+      return val.slice(0, 1);
+    });
+    return x;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named findHappiness that takes in an array of strings and returns an array containing only the strings from the input array that contain ":)".
+Write a function named findHappiness that takes in an array of strings and returns an array 
+containing only the strings from the input array that contain ":)".
 
 For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this is great :)', ':)))))']
 ------------------------------------------------------------------------------------------------ */
 
 const findHappiness = (arr) => {
   // Solution code here...
+    
+    let x=[];
+    arr.map((val)=>{ 
+      if(val.includes(':)')===true){
+        x.push(val);
+      }
+    });
+    return x;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named standardizePhoneNumbers that takes in an array of phone number strings in (XXX) XXX-XXXX format and returns an array with the phone number strings in XXXXXXXXXX format.
+Write a function named standardizePhoneNumbers that takes in an array of phone number 
+strings in (XXX) XXX-XXXX format and returns an array with the phone number strings in XXXXXXXXXX format.
 
 For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
@@ -49,23 +77,46 @@ const standardizePhoneNumbers = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 
 
-Write a function named onlyOddChars that takes in a string and returns only the odd-index characters from that string.
+Write a function named onlyOddChars that takes in a string and returns only 
+the odd-index characters from that string.
 
 For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
   // Solution code here...
+    let x=[];
+    x=str.split('');
+    let strr= x.filter((val,idx)=>{
+      return (idx % 2)
+    });
+    return strr.join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 
 
-Write a function named allHappy that takes in an array of strings and returns a Boolean indicating whether all those strings contain ":)".
+Write a function named allHappy that takes in an array of strings and returns a 
+Boolean indicating whether all those strings contain ":)".
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
   // Solution code here...
+  let x=true;
+  arr.filter((val)=>{ 
+
+     if(x === true){
+        if(val.includes(':)')===true){
+          x=true;
+          return x;
+        }
+        else{
+          x =false; 
+          return x;
+        }
+      }  
+    });
+    return x;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -158,7 +209,7 @@ describe('Testing challenge 1', () => {
   test('It should return an index position of the longest string', () => {
     const strArray1 = ['Ginger', 'Goose', 'Tangerine', 'Rosie', 'Mario', 'Malaki']
     const strArray2 = [];
-    const strArray3= ['Ginger']
+    const strArray3 = ['Ginger']
 
     expect(longestString(strArray1)).toStrictEqual(2);
     expect(longestString(strArray2)).toStrictEqual(-1);
