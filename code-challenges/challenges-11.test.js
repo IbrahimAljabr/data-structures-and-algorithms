@@ -106,7 +106,7 @@ regex you should use. It's many many lines long.
 const validateEmail = (email) => {
   // Solution code here...
 
-  let regex = /\w+.\w+@.*[netcomorg]{3}\b/g;
+  let regex = /^\w+.\w+@.*[netcomorg]{3}\b/g;
  
     if (regex.test(email)) {
       return true;
@@ -141,7 +141,7 @@ Return either true or false.
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
 
-  let regex = /[0-9 ()-]+\b/g;
+  let regex = /^[()0-9]{5} [0-9]*-[0-9]+$|^[0-9]+ [0-9]+-[0-9]+$|^[0-9]+-[0-9]+-[0-9]+$|^[0-9]+ [0-9]+$|^[0-9]{10}$|[0-9]+ [0-9]+ [0-9]+$/g;
  
     if (regex.test(phoneNumber)) {
       return true;
