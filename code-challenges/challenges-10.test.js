@@ -103,16 +103,19 @@ const divisibleByFiveTwoToThePower = (input) => {
   input.map(val =>{
 
     val.map((val2,idx) =>{
-      if((val2 % 5 !== 0) && (val2 )){
-        val.splice(idx,1,0);
+      if(typeof val2 === "string" || ((val2 % 5 !== 0) && (val2 ))){
+        
+        val.splice(idx,1,0); 
+        
       }
     });
   
     for (let index = 0; index < val.length; index++) {
-    
-          if(val[index] === 0){
+     
+          if((val[index] === 0) || typeof val[index]  === "string" ){
             val.splice(index,1)
             index--;
+            
           }
           else{
             val.splice(index,1,Math.pow(2, val[index]))
