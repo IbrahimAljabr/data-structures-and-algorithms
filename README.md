@@ -21,5 +21,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 |Day                  |Class|
 |---------------      |-----| 
-|[Code Challenges 01](https://github.com/IbrahimAljabr/reading-notes/blob/main/Read:02.md)|array-reverse|
+|[Code Challenges 01](https://github.com/IbrahimAljabr/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayReverse)|array-reverse|
 
