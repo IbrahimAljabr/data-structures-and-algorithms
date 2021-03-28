@@ -13,3 +13,13 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+
+
+## Table of Contents :
+
+
+|Day                  |Class|
+|---------------      |-----| 
+|[Code Challenges 01](https://github.com/IbrahimAljabr/reading-notes/blob/main/Read:02.md)|array-reverse|
+
