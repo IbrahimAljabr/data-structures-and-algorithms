@@ -14,7 +14,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
-
+https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayShift/array-shift.js
 
 ## Table of Contents :
 
@@ -22,4 +22,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |Day                  |Class|
 |---------------      |-----| 
 |[Code Challenges 01](https://github.com/IbrahimAljabr/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayReverse)|array-reverse|
+|[Code Challenges 02](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayShift/array-shift.js)|shift-reverse|
 
