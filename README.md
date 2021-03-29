@@ -21,6 +21,6 @@ https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/java
 
 |Day                  |Class|
 |---------------      |-----| 
-|[Code Challenges 01](https://github.com/IbrahimAljabr/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayReverse)|array-reverse|
-|[Code Challenges 02](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayShift/array-shift.js)|shift-reverse|
+|[Code Challenges 01](https://github.com/IbrahimAljabr/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayReverse)|reverse-array|
+|[Code Challenges 02](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayShift/array-shift.js)|shift-array|
 
