@@ -1,6 +1,6 @@
 # Link To Code !
 
-[Binary Array code ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayShift/array-shift.js)
+[Binary Array code ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayBinarySearch/array-binary-search.js)
 
 
 
