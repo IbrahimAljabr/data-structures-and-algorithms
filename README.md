@@ -22,4 +22,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |---------------      |-----| 
 |[Code Challenges 01](https://github.com/IbrahimAljabr/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayReverse)|reverse-array|
 |[Code Challenges 02](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayShift/array-shift.js)|shift-array|
+|[Code Challenges 03](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayBinarySearch/readme.md)|array Binary Search|
 
