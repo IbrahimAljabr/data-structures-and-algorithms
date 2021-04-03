@@ -1,6 +1,6 @@
 # Link To Code !
 
-[Linked-list ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/)
+[Linked-list ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/linkedList/linked-list.js)
 
 # Challenge Summary
 
