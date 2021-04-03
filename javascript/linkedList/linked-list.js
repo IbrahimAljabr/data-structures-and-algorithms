@@ -24,18 +24,31 @@ class LinkedList {
     }
     includes(value){
 
-        
+        let current = this.head;
 
-        while (value) {
-            if(this.head.value === value){
-                console.log('TTTTTTTTTTTTTTTT',value,this.head.value);
+        while (current) {
+
+            if(current.value === value){
                 return true;
             }
-            else{
-                console.log('FFFFFFFFFFFFFFFFF',value);
+
+            current= current.next;
                 return false;
-            }
+            
         }
+    }
+
+    toString(){
+
+        let current = this.head;
+        let toStr ='';
+        
+        while (current) {
+            toStr += `{${current.value}}->`;
+            current= current.next;
+        }
+        
+        return toStr+='null';
     }
 
 }
