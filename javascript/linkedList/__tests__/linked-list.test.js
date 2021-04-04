@@ -65,3 +65,13 @@ test('should get the values as a nodes', () => {
 
     expect(newString).toEqual("{45}->{26}->{10}->null");
 });
+
+test('should append node to the end of the list  ', () => {
+    let valueOne = new Node(1);
+    let linkedList = new LinkedList();
+
+    linkedList.insert(valueOne);
+
+    linkedList.append(new Node(4));
+    expect(linkedList.head.next).toEqual(null);
+});
