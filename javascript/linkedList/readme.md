@@ -2,11 +2,11 @@
 
 [Linked-list ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/linkedList/linked-list.js)
 
-# Challenge Summary
+# Singly Linked List
 
 - modify the linked list .
 
-## Challenge Description
+## Challenge
 
 - checking if the list is empty.
 - adding to the head.
@@ -20,6 +20,8 @@
 - space: O(log 1)
 - time: O(log n)
 
-## Solution
+## API
 
-- using while loop for the searching and adding to the list .
+- insert() to add value to the list.
+- includes() to search in the list for value if exists.
+- toString() return the list in string

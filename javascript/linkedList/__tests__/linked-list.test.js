@@ -45,10 +45,13 @@ test('should check if the value is exists', () => {
     ll.insert(26);
     ll.insert(45);
     let value = 5;
+    let value2 = 45;
     //act
     let ifExists =ll.includes(value);
+    let ifExists2 =ll.includes(value2);
 
     expect(ifExists).toEqual(false);
+    expect(ifExists2).toEqual(true);
 });
 
 test('should get the values as a nodes', () => {
