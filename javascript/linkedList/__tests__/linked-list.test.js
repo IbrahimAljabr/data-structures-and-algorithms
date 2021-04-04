@@ -67,11 +67,75 @@ test('should get the values as a nodes', () => {
 });
 
 test('should append node to the end of the list  ', () => {
-    let valueOne = new Node(1);
-    let linkedList = new LinkedList();
 
-    linkedList.insert(valueOne);
+    let ll = new LinkedList();
 
-    linkedList.append(new Node(4));
-    expect(linkedList.head.next).toEqual(null);
+    ll.insert(4);
+
+    ll.append(8);
+    expect(ll.toString()).toEqual("{4}->{8}->null");
 });
+
+test("should append multiple value to the end of linked list", () => {
+
+    let ll = new LinkedList();
+
+    ll.insert(5);
+    ll.insert(20);
+    ll.insert(43);
+
+    ll.append(4);
+    ll.append(6);
+    expect(ll.toString()).toEqual("{43}->{20}->{5}->{4}->{6}->null");
+  });
+
+  test('should insert after the value ',()=>{
+
+    let ll = new LinkedList();
+
+    ll.insert(42);
+    ll.insert(6);
+    ll.insert(18);
+    ll.insert(33);
+
+    ll.insertAfter(6,200)
+    expect(ll.toString()).toEqual("{33}->{18}->{6}->{200}->{42}->null")
+  });
+
+  test('should insert before the value ',()=>{
+
+    let ll = new LinkedList();
+
+    ll.insert(42);
+    ll.insert(6);
+    ll.insert(18);
+    ll.insert(33);
+
+    ll.insertBefore(6,200)
+    expect(ll.toString()).toEqual("{33}->{18}->{200}->{6}->{42}->null")
+  });
+  test('should insert after the last node in the list ',()=>{
+
+    let ll = new LinkedList();
+
+    ll.insert(42);
+    ll.insert(6);
+    ll.insert(18);
+    ll.insert(33);
+
+    ll.insertAfter(42,200)
+    expect(ll.toString()).toEqual("{33}->{18}->{6}->{42}->{200}->null")
+  });
+
+  test('should insert before the first node in the list ',()=>{
+
+    let ll = new LinkedList();
+
+    ll.insert(42);
+    ll.insert(62);
+    ll.insert(18);
+    ll.insert(33);
+
+    ll.insertBefore(33,200)
+    expect(ll.toString()).toEqual("{200}->{33}->{18}->{62}->{42}->null")
+  });
