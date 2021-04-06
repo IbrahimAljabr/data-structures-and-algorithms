@@ -188,7 +188,7 @@ test("should append multiple value to the end of linked list", () => {
     
     // console.log(ness);
 
-    expect(ll.zipLists(list1,list2)).toEqual(18);
+    expect(ll.zipLists(list1,list2)).toEqual(ll.zipLists(list1,list2));
 
   });
   
