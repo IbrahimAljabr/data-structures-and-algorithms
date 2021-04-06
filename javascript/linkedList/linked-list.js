@@ -139,12 +139,31 @@ class LinkedList {
 
       zipLists(list1,list2) {
 
-       let fCurrent =this.head;
-       let sCurrent =this.head;
+        let temp = null;
+        let current = list1.head;
+        let current2 = list2.head;
+        
+        while (list1 && list2) {
+         
+          let mergedList = current;
+   
+          
+          current = current.next;
+          current2 = current2.next;
 
-
-
+          
+          
       }
+  
+      if (list1) {
+          mergedTail.next = list1;
+      } else if (list2) {
+          mergedTail.next = list2;
+      }
+  
+      return mergedList;
+
+    }
    
 
 }

@@ -170,6 +170,7 @@ test("should append multiple value to the end of linked list", () => {
 
     let ll = new LinkedList();
     let ll2 = new LinkedList();
+    let no = new Node();
 
     ll.insert(4);
     ll.insert(6);
@@ -181,8 +182,13 @@ test("should append multiple value to the end of linked list", () => {
     ll2.insert(180);
     ll2.insert(330);
 
+    let list1 = ll;
+    let list2 = ll2;
+    // let ness = zipLists(ll,ll2)
     
-    
+    // console.log(ness);
 
-    // expect().toEqual(18);
+    expect(ll.zipLists(list1,list2)).toEqual(18);
+
   });
+  
