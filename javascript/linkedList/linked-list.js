@@ -137,33 +137,29 @@ class LinkedList {
       }
 
 
-      zipLists(list1,list2) {
-
-        let temp = null;
-        let current = list1.head;
-        let current2 = list2.head;
-        
-        while (list1 && list2) {
-         
-          let mergedList = current;
-   
-          
-          current = current.next;
-          current2 = current2.next;
-
-          
-          
-      }
-  
-      if (list1) {
-          mergedTail.next = list1;
-      } else if (list2) {
-          mergedTail.next = list2;
-      }
-  
-      return mergedList;
-
-    }
+      zipList = (list1, list2) => {
+        if (!list1.head || !list2.head) {
+          return "Empty list";
+        }
+        let listOneNode = list1.head;
+        let listTwoNode = list2.head;
+        let outputList = new LinkedList();
+        for (let i = 0; i < list1.length + list2.length - 1; i++) {
+          if (i % 2 == 0) {
+            outputList.append(listOneNode.value);
+            listOneNode = listOneNode.next;
+          } else {
+            outputList.append(listTwoNode.value);
+            listTwoNode = listTwoNode.next;
+          }
+        }
+        if (listTwoNode) {
+          outputList.append(listTwoNode.value);
+        } else if (listOneNode) {
+          outputList.append(listOneNode.value);
+        }
+        return outputList;
+      };
    
 
 }
