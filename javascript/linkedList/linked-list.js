@@ -136,6 +136,15 @@ class LinkedList {
         }
       }
 
+
+      zipLists(list1,list2) {
+
+       let fCurrent =this.head;
+       let sCurrent =this.head;
+
+
+
+      }
    
 
 }

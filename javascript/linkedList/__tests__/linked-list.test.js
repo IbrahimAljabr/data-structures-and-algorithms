@@ -165,3 +165,24 @@ test("should append multiple value to the end of linked list", () => {
 
     expect(ll.kthFromEnd(0)).toEqual(42)
   });
+
+  test('should check the Unit Tests for the K  ',()=>{
+
+    let ll = new LinkedList();
+    let ll2 = new LinkedList();
+
+    ll.insert(4);
+    ll.insert(6);
+    ll.insert(1);
+    ll.insert(3);
+
+    ll2.insert(420);
+    ll2.insert(620);
+    ll2.insert(180);
+    ll2.insert(330);
+
+    
+    
+
+    // expect().toEqual(18);
+  });
