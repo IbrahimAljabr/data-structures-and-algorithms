@@ -30,3 +30,8 @@
 - append() to add to the end.
 - insertAfter() to add after the selected node.
 - insertBefore() to add before the selected node.
+- kthFromEnd() to get the value from the back
+
+### whiteboard
+
+![whiteboard](/code7.png)

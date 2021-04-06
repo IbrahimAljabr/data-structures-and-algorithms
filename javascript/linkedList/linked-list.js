@@ -3,12 +3,14 @@ class Node {
     constructor(value) {
         this.value = value;
         this.next = null;
+        
     }
 }
 
 class LinkedList {
     constructor() {
         this.head = null;
+        this.length=0;
     }
 
     insert(value) {
@@ -18,8 +20,10 @@ class LinkedList {
         if(this.head){
             newNode.next = this.head;
             this.head = newNode;
+            this.length++;
         }else {
             this.head = newNode;
+            this.length++;
         }
     }
     includes(value){
@@ -63,6 +67,7 @@ class LinkedList {
             }
             else{
                 current=current.next;
+                
             }
         }
     }
@@ -91,7 +96,6 @@ class LinkedList {
         let newNode = new Node(newVal);
         let current = this.head;
 
-        
 
         if(value === current.value){
             
@@ -111,6 +115,25 @@ class LinkedList {
           current = current.next;
         }
         
+      }
+
+      kthFromEnd(k) {
+   
+        let current = this.head;
+
+        if (k <= this.length - 1 && k >= 0) {
+
+            
+          for (let i = this.length - 1; i >= 0; i--) {
+            if (k == i) {
+                
+              return current.value;
+            }
+            current = current.next;
+          }
+        } else {
+          return "Exception";
+        }
       }
 
    

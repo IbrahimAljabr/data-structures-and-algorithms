@@ -139,3 +139,29 @@ test("should append multiple value to the end of linked list", () => {
     ll.insertBefore(33,200)
     expect(ll.toString()).toEqual("{200}->{33}->{18}->{62}->{42}->null")
   });
+
+  test('should check the Unit Tests for the K  ',()=>{
+
+    let ll = new LinkedList();
+
+    ll.insert(42);
+    ll.insert(62);
+    ll.insert(18);
+    ll.insert(33);
+
+    
+    
+    expect(ll.kthFromEnd(10)).toEqual("Exception");
+    expect(ll.kthFromEnd(4)).toEqual("Exception");
+    expect(ll.kthFromEnd(-2)).toEqual("Exception");
+    expect(ll.kthFromEnd(2)).toEqual(18);
+  });
+
+  test('should check the link list of size 1  ',()=>{
+
+    let ll = new LinkedList();
+
+    ll.insert(42);
+
+    expect(ll.kthFromEnd(0)).toEqual(42)
+  });
