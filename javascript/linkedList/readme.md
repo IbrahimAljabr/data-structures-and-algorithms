@@ -33,4 +33,4 @@
 
 ## whiteboard
 
-![whiteboard](/code6.png)
+![whiteboard](code6.png)
