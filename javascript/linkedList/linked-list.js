@@ -138,28 +138,35 @@ class LinkedList {
 
 
       zipList = (list1, list2) => {
+
         if (!list1.head || !list2.head) {
           return "Empty list";
         }
-        let listOneNode = list1.head;
-        let listTwoNode = list2.head;
-        let outputList = new LinkedList();
+
+        let current1 = list1.head;
+        let current2 = list2.head;
+
         for (let i = 0; i < list1.length + list2.length - 1; i++) {
+
           if (i % 2 == 0) {
-            outputList.append(listOneNode.value);
-            listOneNode = listOneNode.next;
+
+            this.append(current1.value);
+            current1 = current1.next;
           } else {
-            outputList.append(listTwoNode.value);
-            listTwoNode = listTwoNode.next;
+
+            this.append(current2.value);
+            current2 = current2.next;
           }
         }
-        if (listTwoNode) {
-          outputList.append(listTwoNode.value);
-        } else if (listOneNode) {
-          outputList.append(listOneNode.value);
+        if (current2) {
+
+          this.append(current2.value);
+        } else if (current1) {
+
+          this.append(current1.value);
         }
-        return outputList;
-      };
+        return this;
+      }
    
 
 }
