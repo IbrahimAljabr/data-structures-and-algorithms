@@ -30,3 +30,7 @@
 - append() to add to the end.
 - insertAfter() to add after the selected node.
 - insertBefore() to add before the selected node.
+
+## whiteboard
+
+![whiteboard](/code6.png)
