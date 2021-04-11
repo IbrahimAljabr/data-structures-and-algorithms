@@ -1,6 +1,6 @@
 # Link To Code !
 
-[Linked-list ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/linkedList/linked-list.js)
+[Stack & Queue](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/stacksAndQueues/stacks-and-queues.js)
 
 # Stack & Queue
 
