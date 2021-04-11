@@ -23,4 +23,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |[Code Challenges 01](https://github.com/IbrahimAljabr/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayReverse)|reverse-array|
 |[Code Challenges 02](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayShift/array-shift.js)|shift-array|
 |[Code Challenges 03](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayBinarySearch/readme.md)|array Binary Search|
+|[Code Challenges 05](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/linkedList/linked-list.js)|linked List|
 
+|[Code Challenges 06](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/linkedList/linked-list.js)|Linked list insertions.|
+|[Code Challenges 07](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/linkedList/linked-list.js)|Linked list insertions k-th.|
