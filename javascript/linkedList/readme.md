@@ -34,4 +34,4 @@
 
 ### whiteboard
 
-![whiteboard](/code7.png)
+![whiteboard](code7.png)
