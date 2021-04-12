@@ -1,0 +1,14 @@
+{
+  "name": "queuewithstacks",
+  "version": "1.0.0",
+  "description": "[Linked-list ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/linkedList/linked-list.js)",
+  "main": "queue-with-stacks.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
