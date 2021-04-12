@@ -1,6 +1,6 @@
 # Link To Code !
 
-[Queue using two Stacks ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayBinarySearch/array-binary-search.js)
+[Queue using two Stacks ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/queueWithStacks/queue-with-stacks.js)
 
 # Challenge Summary
 
