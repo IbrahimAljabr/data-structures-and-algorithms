@@ -56,6 +56,18 @@ class BinaryTree {
     traverse(this.root);
     return result;
   }
+  maximum() {
+    if (!this.root) {
+      return null;
+    } else {
+      let result = this.postOrder();
+      let max = 0;
+      for (let index = 0; index < result.length; index++) {
+        if (result[index] > max) max = result[index];
+      }
+      return max;
+    }
+  }
 }
 
 class BinarySearchTree {

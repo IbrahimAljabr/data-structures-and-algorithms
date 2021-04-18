@@ -1,17 +1,14 @@
 # Link To Code !
 
-[Linked-list ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/tree/tree.js)
+[Queue using two Stacks ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/queueWithStacks/queue-with-stacks.js)
 
-# tree
+# Challenge Summary
 
-- modify the BinaryTree
+- get the maximum value from Btree
 
-## Challenge
+## Challenge Description
 
-- create tree
-- search in the tree
-- add node in the tree
-- search for value in the tree
+- search in minimum time as possible
 
 ## Approach & Efficiency
 
@@ -19,12 +16,6 @@
 - space: O(log n)
 - time: O(log n)
 
-## API
+## Solution
 
-### BinaryTree
-
-- preOrder() root >> left >> right
-- In-order() left >> root >> right
-- Post-order() left >> right >> root
-- add() add to the tree
-- contains() check if the tree have the value
+![Image](assats/code16.png)

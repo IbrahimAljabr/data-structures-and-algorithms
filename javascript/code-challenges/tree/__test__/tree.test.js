@@ -72,7 +72,7 @@ describe("Binary Tree", () => {
 
     expect(addNew.root.right.value).toEqual(75);
   });
-  test("should add new node", () => {
+  test("should search for value", () => {
     //arrange
     const addNew = new BinarySearchTree();
 
@@ -84,5 +84,14 @@ describe("Binary Tree", () => {
     //acts
 
     expect(addNew.contains(23)).toEqual(true);
+  });
+  test("should find max value", () => {
+    //arrange
+    const array = [4, 2, 8, 5, 1, 6, 3, 7];
+    const inOrder = tree.maximum();
+
+    //act
+
+    expect(inOrder).toEqual(8);
   });
 });
