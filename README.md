@@ -25,5 +25,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |[Code Challenges 03](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/arrayBinarySearch/readme.md)|array Binary Search|
 |[Code Challenges 05](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/linkedList/readme.md)|Singly Linked Lists|
 |[Code Challenges 10](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/stacksAndQueues/readme.md)|Stack and a Queue|
-|[Code Challenges 16](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/tree/readme.md)|binary tree|
+|[Code Challenges 16](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/tree/readme.md)|Binary Tree|
 
