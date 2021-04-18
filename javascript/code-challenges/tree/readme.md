@@ -1,6 +1,6 @@
 # Link To Code !
 
-[Linked-list ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/linkedList/linked-list.js)
+[Linked-list ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/tree/tree.js)
 
 # tree
 
