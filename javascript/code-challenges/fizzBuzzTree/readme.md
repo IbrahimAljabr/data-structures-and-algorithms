@@ -1,0 +1,24 @@
+# Link To Code !
+
+[Queue using two Stacks ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/tree/tree.js)
+
+# Challenge Summary
+
+- Replace the values with another string
+
+## Challenge Description
+
+- If the value is divisible by 3, replace the value with “Fizz”
+- If the value is divisible by 5, replace the value with “Buzz”
+- If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+- If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+## Approach & Efficiency
+
+- to make it less complex as possible .
+- space: O(log n)
+- time: O(log n)
+
+## Solution
+
+![Image](../assats/code17.png)
