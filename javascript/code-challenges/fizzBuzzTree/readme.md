@@ -21,4 +21,4 @@
 
 ## Solution
 
-![Image](../assats/code17.png)
+![Image](../assats/code18.png)
