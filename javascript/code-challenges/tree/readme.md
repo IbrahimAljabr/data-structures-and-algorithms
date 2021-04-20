@@ -1,6 +1,6 @@
 # Link To Code !
 
-[Queue using two Stacks ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/queueWithStacks/queue-with-stacks.js)
+[Queue using two Stacks ](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/tree/tree.js)
 
 # Challenge Summary
 
