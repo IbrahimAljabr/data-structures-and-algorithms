@@ -4,11 +4,11 @@
 
 # Challenge Summary
 
-- get the maximum value from Btree
+- get the breadth first traversal
 
 ## Challenge Description
 
-- search in minimum time as possible
+- search in the tree using breadth first traversal
 
 ## Approach & Efficiency
 
@@ -18,4 +18,4 @@
 
 ## Solution
 
-![Image](assats/code16.png)
+![Image](assats/code17.png)
