@@ -94,4 +94,13 @@ describe("Binary Tree", () => {
 
     expect(inOrder).toEqual(8);
   });
+  test("should breadth first traversal", () => {
+    //arrange
+    const array = [1, 2, 3, 4, 5, 6, 7, 8];
+    const preOrder = tree.breadthFirst();
+
+    //act
+
+    expect(preOrder).toEqual(array);
+  });
 });

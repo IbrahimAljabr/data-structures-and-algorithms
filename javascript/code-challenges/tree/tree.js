@@ -68,6 +68,19 @@ class BinaryTree {
       return max;
     }
   }
+  breadthFirst() {
+    let result = [];
+    let root = this.root;
+    let node = [this.root];
+
+    while (node.length) {
+      root = node.shift();
+      result.push(root.value);
+      if (root.left) node.push(root.left);
+      if (root.right) node.push(root.right);
+    }
+    return result;
+  }
 }
 
 class BinarySearchTree {
