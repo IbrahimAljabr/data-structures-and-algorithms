@@ -27,4 +27,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |[Code Challenges 10](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/stacksAndQueues/readme.md)|Stack and a Queue|
 |[Code Challenges 16](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/tree/readme.md)|Binary Tree|
 |[Code Challenges 17](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/tree/readme.md)|Breadth First Traversal|
+|[Code Challenges 18](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/fizzBuzzTree/readme.md)|fizz Buzz Tree|
 
