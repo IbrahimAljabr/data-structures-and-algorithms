@@ -80,6 +80,7 @@ class Queue {
   dequeue() {
     if (this.top) {
       this.top = this.top.next;
+      this.length--;
     } else {
       return "Exception";
     }
