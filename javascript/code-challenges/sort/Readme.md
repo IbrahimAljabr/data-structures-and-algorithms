@@ -14,4 +14,4 @@
 
 ## Solution
 
-![Image](assats/code26.png)
+![Image](../assats/code26.png)
