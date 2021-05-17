@@ -30,4 +30,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |[Code Challenges 18](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/fizzBuzzTree/readme.md)|fizz Buzz Tree|
 |[Code Challenges 26](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/sort/Readme.md)|Sort|
 |[Code Challenges 28](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/quickSort/README.md)|QuickSort|
+|[Code Challenges 31](https://github.com/IbrahimAljabr/data-structures-and-algorithms/blob/master/javascript/code-challenges/repeatedWord/README.md)|RepeatedWord|
 
