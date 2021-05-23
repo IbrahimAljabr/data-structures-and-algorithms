@@ -65,4 +65,10 @@ describe("tell", () => {
 
     expect(graph.size()).toEqual(2);
   });
+
+  test("should return null if the graph is empty", () => {
+    const graph = new Graph();
+
+    expect(graph.size()).toEqual(null);
+  });
 });
